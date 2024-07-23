@@ -5,7 +5,7 @@ import CartCountBadge from "../CartCountBadge/CartCountBadge";
 import LoginPopUp from '../LoginPopUp/LoginPopUp';
 import CartPopup from '../Cart/CartPopUp';
 import { StoreContext } from '../context/StoreContext';
-import { Navigate } from 'react-router-dom';
+
 
 const Navbar = () => {
   const [showLogin, setShowLogin] = useState(false);
@@ -34,7 +34,7 @@ const Navbar = () => {
             </div>
             <div className="icon_wrapper relative" onClick={cartHandler}>
               <AiOutlineShoppingCart />
-              {/* {Object.keys(cartItems).length > 0 && <CartCountBadge size="w-[25px] h-[25px]" />} */}
+              {Object.keys(cartItems).length > 0 && <CartCountBadge size="w-[25px] h-[25px]" />}
             </div>
           </div>
         </div>

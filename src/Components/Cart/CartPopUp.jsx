@@ -57,6 +57,10 @@ const CartPopup = ({ setShowCart }) => {
             <div className="mt-4 flex justify-between items-center font-bold">
               <span>Total:</span>
               <span>${totalPrice.toFixed(2)}</span>
+
+            </div>
+            <div className="mt-4 flex justify-center">
+              <button className="px-4 py-2 bg-red-500 text-white rounded font-bold hover:bg-red-600 transition">Process to Checkout</button>
             </div>
           </div>
         )}
